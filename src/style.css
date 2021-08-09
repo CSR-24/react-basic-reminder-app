@@ -1,0 +1,26 @@
+.taskContainer {
+  width: 60vw;
+  min-height: 40vh;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.task {
+  background-color: lightgrey;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.task > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.task > p {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
