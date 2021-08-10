@@ -43,7 +43,11 @@ export default function App() {
         Add tasks from here...
         <Button text="Add" color="red" onClick={onClickHandler} />
       </div>
-      <Tasks tasks={tasks} deleteTask={deleteTask} />
+      {tasks.length > 0 ? (
+        <Tasks tasks={tasks} deleteTask={deleteTask} />
+      ) : (
+        'No Tasks to display!'
+      )}
     </div>
   );
 }
